@@ -44,3 +44,17 @@
     color: #facc15;
 }
 
+@media (max-width: 414px) {  
+    .Cookies {
+        height:  200px;
+    }
+
+    .Cookies-text {
+        display: block;
+    }
+    .decline-cookies {
+        margin-right: 100px;
+    }
+    
+}
+

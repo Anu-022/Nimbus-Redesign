@@ -14,8 +14,24 @@ const ImageSlider = () => {
       lazyLoad: true,
       autoplay: true,
     autoplaySpeed: 2000,
-     
+    responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+           slidesToShow: 1,
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+           slidesToShow: 1,
+          }
+         }
+      ]
+
     };
+
+
     return (
       <>
         <div className="imgslider">
@@ -30,5 +46,7 @@ const ImageSlider = () => {
         </div>
             </>
     )
-  }
-  export default ImageSlider;
+  
+  
+   }  
+   export default ImageSlider;

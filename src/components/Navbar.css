@@ -13,31 +13,31 @@ nav {
     z-index: 100;
 
 }
-.navbar__list{
+#navbar__list{
     display: flex; 
     justify-items: center; 
     align-items: center;
     position: relative;
 }
-.navbar__list li {
+#navbar__list li {
     list-style: none;
     padding:  0 20px;
     position: relative;
 }
-.navbar__list li a {
+#navbar__list li a {
     text-decoration: none;
     font-size: 20px;
     color:rgb(39, 45, 78) ;
     font-weight: 500;
     transition: 0.3s ease-out;
 } 
-.navbar__list li a:hover,
-.navbar__list li a.active
+#navbar__list li a:hover,
+#navbar__list li a.active
  {
     color:#16a4de
 }
-.navbar__list-item a:hover::after,
-.navbar__list-item a.active::after{
+#navbar__list-item a:hover::after,
+#navbar__list-item a.active::after{
     content: "";
     width: 30px;
     height: 4px;
@@ -53,7 +53,7 @@ nav {
 
 @media (max-width: 414px) {
 
-.navbar__list {  
+#navbar__list {  
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
@@ -65,12 +65,12 @@ nav {
     background-color: #e5e7eb;
     padding: 40px 0 0 10px;
     box-shadow:0 40px 60px rgba(0 0 0 0.2);
-    display: none;
+    
 }
-.navbar__list.active {
-    right: 0;
+#navbar__list .expanded {
+    right: -300px;
 }
-.navbar__list li {
+#navbar__list li {
     margin-bottom: 25px;
 }
 #mobile-menu {
@@ -79,6 +79,9 @@ nav {
 #mobile i {
     font-size: 24px;
     cursor: pointer;
+}
+#bars {
+    color: #16a4de;
 }
 }
 

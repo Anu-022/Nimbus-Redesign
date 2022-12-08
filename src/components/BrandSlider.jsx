@@ -14,6 +14,21 @@ const BrandSlider = () => {
       autoplay: true,
     autoplaySpeed: 2000,
     lazyLoad: true,
+    responsive: [
+      {
+        breakpoint: 700,
+        settings: {
+         slidesToShow: 1,
+        }
+      },
+      {
+        breakpoint: 414,
+        settings: {
+         slidesToShow: 2,
+        }
+       }
+    ]
+
      
     };
     return (

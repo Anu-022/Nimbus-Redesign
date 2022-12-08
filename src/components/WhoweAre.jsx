@@ -4,7 +4,7 @@ function WhoweAre () {
         <>
         <div className="WhoweAre">
             <div className="WhoweAre-title">
-                <h3 className="WhoweAre-mobile">WHO WE ARE</h3>
+                <h3 className="WhoweAre-mobile">WHO WE ARE?</h3>
                 <h2>WHO 
                     <br />
                     <span id="highlight">WE ARE?</span> 

@@ -49,3 +49,30 @@ margin-bottom: 30px;
 .footer-info li + .footer-info li {
     margin-left: 12px;
 }
+
+@media (max-width: 414px) {
+
+    .Footer {
+        padding: 0 12px 200px;
+
+    }
+    .footer-info {
+        display: block;
+        text-align: center;
+        font-size: 12px;
+        margin: 0 auto;
+       
+    }
+    
+    .footer-info li {
+        justify-content: center;
+        
+    }
+
+    .footer-info li + .footer-info li {
+        margin-top: 15px;
+    }
+    .footer-icon-list {
+        font-size: 12px;
+    }
+ }

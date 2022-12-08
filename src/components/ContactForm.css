@@ -62,3 +62,44 @@
     margin: 60px auto 0 ;
     font-weight: 500;
 }
+
+@media (max-width: 414px) {
+    .ContactForm{
+        width: 100%;
+      
+    }
+
+    .ContactForm h3 {
+        font-size: 28px;
+        padding-bottom: 10px;
+    }
+
+    .form {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .form label {
+        display: block;
+        margin-bottom: 15px;
+    }
+    span.input-details {
+        margin-bottom: 8px;
+    }
+    .contact-details {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .contact-heading {
+        font-size: 20px;
+        line-height: 21px;
+    }
+    .user-input {
+        width: 100%;
+    }
+    .message-box {
+        display: block;
+        width: 100%;
+    }
+    
+    
+}

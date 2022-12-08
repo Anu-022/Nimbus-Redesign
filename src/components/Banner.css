@@ -25,3 +25,13 @@ color:#e5e7eb;
     background: #e5e7eb;
     color: #272dea;
 }
+
+
+@media (max-width: 414px) {
+
+.Banner {
+    display: none;
+}
+
+    
+}

@@ -1,5 +1,6 @@
 .PastWork {
     width: 100vw;
+    position: relative;
 }
 .PastWork h3, .PastWork p {
     color:#272d4a;
@@ -26,6 +27,7 @@
     align-items:center;
     gap: 30px;
     padding:  0 40px;
+   
 }
 .work{
     padding: 10px;
@@ -48,3 +50,39 @@
     font-size: 25px;
     margin-top: 10px;
 }
+.rightArrow, .leftArrow {
+  display: none;
+}
+
+@media (max-width: 414px) {
+    .PastWork h3 {
+    font-size: 28px;
+    }
+     
+    .workImg {
+       width:  300px;
+        height: 300px;
+        padding-top: 40px;
+        margin: 0 auto;
+    }
+    .works:nth-child(n + 2){ 
+        display: none;
+    }
+
+    .left-arrow, .right-arrow{
+        display: inline-block;
+    }
+    .left-arrow  {
+        position: absolute;
+        bottom: 199px;
+        left: 20px;
+    }
+    .right-arrow {
+        position: absolute;
+        bottom: 199px;
+        right: 20px;
+    
+    }
+    
+}
+

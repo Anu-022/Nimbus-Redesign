@@ -30,3 +30,23 @@
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     margin: 20px auto;
 }
+
+@media (max-width: 414px) {
+    .Team {
+        width: 100%;
+        padding: 0 12px;
+    }
+    .Team h3 {
+        font-size: 28px;
+    }
+    .Team p  {
+        text-align: justify;
+        font-size: 14px;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .team-image {
+        width: 350px;
+        padding: 0 auto;
+    }
+}

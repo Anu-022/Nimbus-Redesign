@@ -1,11 +1,10 @@
 import React, {useState}  from 'react';
 import './Navbar.css';
-import ServicesMenu from './ServicesMenu';
-import AboutMenu from './AboutMenu';
 function Navbar () {
     const [menuIcon, setMenuIcon] = useState(false);
-    const [dropdown, setDropdown] = useState(false);
     const [showNav, setShowNav] = useState(false);
+
+    
     return(
         <>
         <nav>
@@ -13,8 +12,8 @@ function Navbar () {
                 <img src="https://www.nimbus.com.ng/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FNimbus_Logo.b483055b.png&w=256&q=75" alt="nimbus-logo" width="80px" height= "60px"/>
             </a>
             <div>
-                <ul className={showNav ?'navbar__list active':'navbar__list'}
-                onClick={() => setShowNav(true)}>
+                <ul id= "navbar__list"className={!showNav ?'#navbar__list.expanded':'#navbar__list'}
+                onClick={() => setShowNav(!showNav)}>
                     <li className="navbar__list-item">
                         <a className='active' href="index.html">Home</a>
                     </li>
