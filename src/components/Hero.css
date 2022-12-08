@@ -1,0 +1,115 @@
+.Hero {
+    width: 100vw;
+    overflow: hidden;
+    height: 100vh;
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(23, 22, 22, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.overlay-text {
+    position: relative;
+
+    
+}
+.overlay-text h1 {
+    color: #fff;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 50px;
+}
+#text-highlight {
+color: #16a4de;
+font-weight: 700;
+}
+.overlay p {
+    color: #fff;
+    font-size: 22px;
+    font-weight:600;
+    line-height: 30px;
+    width: 600px;
+    padding-top: 20px;
+}
+.btn {
+    padding:15px 45px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+    color: #e5e7eb;
+}
+.explore-btn {
+    background: #1e52ae;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    margin-left: 90px;
+    margin-top: 20px;
+}
+.social-icons {
+    position: absolute;
+    right: 70px;
+    top:  40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+.icons {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    color: #e5e7eb;
+    background-color: #16a4de;
+    padding: 10px;
+    border-radius: 50%;
+    
+}
+
+.icons + .icons {
+    margin-top: 12px;
+}
+.icons:hover{
+    background-color: #e5e7eb;
+    color: #16a4de;
+    transform: scale(1.2);
+    transition: 2s ease;
+}
+
+
+@media (max-width: 414px) {
+    .Hero {
+        width:100%;
+        height: 400px;
+        background-position: center;
+    }
+    .overlay {
+        width: 100%;
+        height: 400px;
+    }
+    
+    .social-icons {
+        display: none;
+    }
+
+    .overlay-text { 
+        margin: 0 auto;
+        text-align: center;
+    }    
+    .overlay-text h1 {
+        font-size: 20px;
+        width: 300px;
+        line-height: 25px;
+        font-weight: 700;
+    }
+
+}

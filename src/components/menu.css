@@ -1,0 +1,40 @@
+.ServicesMenu {
+    background-color: #16a4de;
+    width: 230px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+}
+.ServicesMenu li {
+cursor: pointer;
+}
+
+#submenu-list:hover {
+    background-color: #e5e7eb;  
+}
+#submenu-item {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 16px;
+    font-weight: 500;
+
+}
+#submenu-item:hover {
+    color: #16a4de;
+}
+#submenu-item:hover::after {
+    background-color:transparent;
+}
+.ServicesMenu.clicked {
+    display: none;
+}
+
+@media (max-width: 414px) {
+
+    .ServicesMenu {
+        display: none;
+    }
+}

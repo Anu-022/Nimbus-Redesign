@@ -1,0 +1,6 @@
+.BrandSlider:hover img{
+    transform: scale(1.5);
+    transition: 2s ease;
+}
+
+
