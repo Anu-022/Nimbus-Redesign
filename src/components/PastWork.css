@@ -53,6 +53,9 @@
 .rightArrow, .leftArrow {
   display: none;
 }
+PastWorkSlider {
+    display: none;
+}
 
 @media (max-width: 414px) {
     .PastWork h3 {
