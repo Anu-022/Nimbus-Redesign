@@ -36,8 +36,8 @@ nav {
  {
     color:#16a4de
 }
-#navbar__list-item a:hover::after,
-#navbar__list-item a.active::after{
+.navbar__list-item a:hover::after,
+.navbar__list-item a.active::after{
     content: "";
     width: 30px;
     height: 4px;
