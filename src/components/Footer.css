@@ -25,16 +25,19 @@ margin-bottom: 30px;
 }
 .footer-icon-list {
     list-style: none;
+     
+}
+.footer-icon-link {
     font-size: 20px;
     color: #e5e7eb;
     background-color: #16a4de;
     padding: 10px 15px;
-    border-radius: 50%;  
+    border-radius: 50%; 
 }
 .footer-icon-list + .footer-icon-list {
     margin-left: 12px;
 }
-.footer-icon-list:hover{
+.footer-icon-link:hover{
     background-color: #e5e7eb;
     color: #16a4de;
     transform: scale(1.2);
@@ -72,7 +75,7 @@ margin-bottom: 30px;
     .footer-info li + .footer-info li {
         margin-top: 15px;
     }
-    .footer-icon-list {
+    .footer-icon-link {
         font-size: 12px;
     }
  }

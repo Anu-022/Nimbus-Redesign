@@ -7,10 +7,16 @@ function Accordion() {
     const [activeCurrentIndex, setActiveCurrentIndex ] = useState();
     
     const toggleShowAccordion = (id) => {
+        
         if(activeCurrentIndex === id){
-            setActiveCurrentIndex();
+            setActiveCurrentIndex();  
+           
         } else {
+
             setActiveCurrentIndex(id);
+            
+        
+            
         }
     } 
         
@@ -23,9 +29,9 @@ function Accordion() {
                 <div className="accordion-title" 
                 onClick={() => toggleShowAccordion(id)}>
                     <div>{title}</div>
-                    <div><i className= {isActive ? 'fas fa-xmark' : 'fas fa-plus'}></i></div>
+                    <div><i className={isActive ? "fas fa-xmark": "fas fa-plus"}></i></div>
                 </div>
-                {activeCurrentIndex === id&& <div className="accordion-content">{content}</div>}
+                {activeCurrentIndex === id && <div className="accordion-content">{content}</div>}
             </div>)
           )
         }    

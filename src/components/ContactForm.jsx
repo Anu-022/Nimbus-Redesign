@@ -10,22 +10,22 @@ function ContactForm() {
             <form className="form">
                     <label>
                         <span className="input-details">Name</span>
-                        <input type="text" class="user-input" placeholder='Full Name' />
+                        <input type="text" className="user-input" placeholder='Full Name' />
                     </label>
                     <label>
                         <span className="input-details">Email</span>
-                        <input type="email" class="user-input" placeholder='Email Address' />
+                        <input type="email" className="user-input" placeholder='Email Address' />
                     </label>
                     <label>
                         <span className="input-details">Subject</span>
-                        <input type="text" class="user-input"/>
+                        <input type="text" className="user-input"/>
                     </label>
                     <label className="textarea">
-                        <span class="input-details">Message</span>
-                        <textarea name="message" class="message-box"  placeholder='Tell us about your project'></textarea>
+                        <span className="input-details">Message</span>
+                        <textarea name="message" className="message-box"  placeholder='Tell us about your project'></textarea>
                     </label> 
                     
-                        <input type="submit" class= "btn submit-btn" value="Send Message" />
+                        <input type="submit" className= "btn submit-btn" value="Send Message" />
                
                 </form>   
              

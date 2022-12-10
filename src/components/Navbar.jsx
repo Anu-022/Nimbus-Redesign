@@ -1,19 +1,23 @@
-import React, {useState}  from 'react';
+import { Component } from 'react';
 import './Navbar.css';
-function Navbar () {
-    const [menuIcon, setMenuIcon] = useState(false);
-    const [showNav, setShowNav] = useState(false);
-
+class Navbar extends Component {
+    state = {clicked: false};
+    handleClick = ()=>{
+        this.setState({clicked:
+        !this.state.clicked})
+    }
     
-    return(
+    render() {
+    
+     return(
         <>
         <nav>
             <a href="index.html">
                 <img src="https://www.nimbus.com.ng/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FNimbus_Logo.b483055b.png&w=256&q=75" alt="nimbus-logo" width="80px" height= "60px"/>
             </a>
             <div>
-                <ul id= "navbar__list"className={!showNav ?'#navbar__list.expanded':'#navbar__list'}
-                onClick={() => setShowNav(!showNav)}>
+                <ul id="navbar__list"
+                className={this.state.clicked?'#navbar__list expanded':'#navbar__list'}>
                     <li className="navbar__list-item">
                         <a className='active' href="index.html">Home</a>
                     </li>
@@ -39,9 +43,8 @@ function Navbar () {
                     </li>
                 </ul>
                 <div id='mobile-menu' 
-                onClick={()=>
-                   setMenuIcon(!menuIcon)}>
-                    <i id='bars' className={ menuIcon ?'fas fa-xmark' : 'fas fa-bars'}></i>
+                onClick={this.handleClick}>
+                    <i id='bars' className={ this.state.clicked ?'fas fa-xmark' : 'fas fa-bars'}></i>
                 </div>
             </div>
         </nav>
@@ -50,6 +53,7 @@ function Navbar () {
 
     )
     
+}
 }
 
 export default Navbar;

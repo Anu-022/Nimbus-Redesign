@@ -22,14 +22,14 @@
 }
 .nimbus-div:hover {
     transform:scale(0.8);
-    transition: 1s ease;
+    transition: 1s ease-in-out;
 }
 #nimbus-text {
     padding-top: 40px;
 }
 #nimbus-aid-desktop{
-    font-size: 28px;
-    font-weight: 500;
+    font-size: 38px;
+    font-weight: 600;
     padding: 0;
     color: #facc15;
 }

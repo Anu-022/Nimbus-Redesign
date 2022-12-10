@@ -12,8 +12,7 @@ const BrandSlider = () => {
       slidesToScroll: 1,
       lazyLoad: true,
       autoplay: true,
-    autoplaySpeed: 2000,
-    lazyLoad: true,
+     autoplaySpeed: 2000,
     responsive: [
       {
         breakpoint: 700,
@@ -37,7 +36,7 @@ const BrandSlider = () => {
           <Slider {...settings}>
             {brandLogo.map((item) => (
               <div key={item.id}>
-                <img src={item.src} className="brand-icons" alt={item.alt} width="70px" height="50px" />
+                <img src={item.src} alt={item.alt} width="70px" height="50px" />
               </div>
             ))}
             

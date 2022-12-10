@@ -40,7 +40,7 @@
 }
 .divider:hover {
     width: 250px;
-    transition:  0.2s ease-in;
+    transition:  0.2s ease-in-out;
 }
 
 
